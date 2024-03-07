@@ -51,6 +51,7 @@ export default {
     // Call the check method on component mount
     onMounted(() => {
       check();
+      document.title = "Matthew's Portfolio";
     });
 
     // Listen for window resize events and update intro accordingly
@@ -72,6 +73,7 @@ export default {
   },
 };
 </script>
+
 
 <template>
   <div class="navbar">
