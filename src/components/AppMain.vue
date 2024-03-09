@@ -14,13 +14,13 @@
 
     <div class="icons">
       <a href="https://www.linkedin.com/in/swematthew101/" class="social-link">
-        <img src="@/assets/linkedin.png" alt="LinkedIn">
+        <img src="@/assets/linkedin-c.png" alt="LinkedIn">
       </a>
       <a href="https://github.com/MatthewBel11?tab=overview&from=2023-12-01&to=2023-12-19" class="social-link">
-        <img src="@/assets/github.png" alt="GitHub">
+        <img src="@/assets/github-c.png" alt="GitHub">
       </a>
       <a href="https://twitter.com/matthew_ncl" class="social-link">
-        <img src="@/assets/twitter.png" alt="Twitter">
+        <img src="@/assets/LeetCode.png" alt="Twitter">
       </a>
     </div>
 
@@ -128,6 +128,10 @@
   max-height: 100%;
   width: auto;
   height: auto;
+}
+
+.icons img:hover{
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 440px) {

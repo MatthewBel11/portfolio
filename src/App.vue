@@ -97,6 +97,7 @@ body {
   padding: 0;
   background-image: linear-gradient(#181818, #131313);
   overflow: overlay;
+  user-select: none;
 }
 
 

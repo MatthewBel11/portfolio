@@ -15,14 +15,14 @@
 
     <h2 class="tech"> Tech Stack </h2>
     <div class="image-container-tech">
-        <img src="@/assets/css-3.png" alt="css">
-        <img src="@/assets/java.png" alt="java">
-        <img src="@/assets/java-script.png" alt="javascript">
-        <img src="@/assets/html.png" alt="html">
-        <img src="@/assets/python.png" alt="python">
-        <img src="@/assets/sql-server.png" alt="sql">
+        <img src="@/assets/css-3-c.png" alt="css">
+        <img src="@/assets/java-c.png" alt="java">
+        <img src="@/assets/java-script-c.png" alt="javascript">
+        <img src="@/assets/html-c.png" alt="html">
+        <img src="@/assets/python-c.png" alt="python">
+        <img src="@/assets/sql-server-c.png" alt="sql">
         <img src="@/assets/git.png" alt="git">
-        <img src="@/assets/github.png" alt="github">
+        <img src="@/assets/github-c.png" alt="github">
     </div>
 
     </div>
