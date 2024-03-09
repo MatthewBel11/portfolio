@@ -19,7 +19,7 @@
       <a href="https://github.com/MatthewBel11?tab=overview&from=2023-12-01&to=2023-12-19" class="social-link">
         <img src="@/assets/github-c.png" alt="GitHub">
       </a>
-      <a href="https://twitter.com/matthew_ncl" class="social-link">
+      <a href="https://leetcode.com/_Matt_Bell/" class="social-link">
         <img src="@/assets/LeetCode.png" alt="Twitter">
       </a>
     </div>
