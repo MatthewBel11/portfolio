@@ -13,7 +13,7 @@
 
 
     <div class="icons">
-      <a href="https://www.linkedin.com/in/swematthew101/" class="social-link">
+      <a href="https://www.linkedin.com/in/swe-matthew/" class="social-link">
         <img src="@/assets/linkedin-c.png" alt="LinkedIn">
       </a>
       <a href="https://github.com/MatthewBel11?tab=overview&from=2023-12-01&to=2023-12-19" class="social-link">
