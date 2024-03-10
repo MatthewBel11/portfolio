@@ -7,21 +7,14 @@
                 <div class="checkpoint">
                     <div>
                         <h3 class="cph3">
-                            Abit more about me!
-                        </h3>
-                        <p class="cpWords">
-                            My journey towards becoming a software engineer commenced during my A-levels in 2020. It was in this academic phase that I discovered my passion for coding. Intrigued by the possibilities, I immersed myself in learning Python, initiating a series of home projects to hone my coding skills and delve deeper into the world of software development.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="checkpoint">
-                    <div>
-                        <h3 class="cph3">
                             Why software engineering?
                         </h3>
                         <p class="cpWords">
-                            After two years of dedicated effort, I successfully completed my A-levels and secured admission to Newcastle University, where I enrolled in the Computer Science program with a specialization in software engineering. During my first year, I delved into fundamental courses such as Computing, Computer Systems Design, and Architectures, and Foundations of Data Science. Engaging in numerous projects, including a large-scale collaborative effort, broadened my skill set and provided invaluable practical experience.
+                            After four years of dedicated study, I'm on the cusp of graduating as a Junior Software Engineer. Why? Simply put, I have an unbridled passion for creating things. 
+                            Whether it's assembling a flatpack dining table at Ikea or crafting a fully responsive portfolio website, the joy of making is my driving force.
+
+                            Yet, it's not just about the act of creating. Mathematics and challenges hold a special place in my heart, competing for the top spot alongside my love for making things. 
+                            When you merge these three elements, you get the beautiful concoction known as Software Engineering. Well, pretty much...
                         </p>
                     </div>
                 </div>
@@ -32,7 +25,30 @@
                             What's next?
                         </h3>
                         <p class="cpWords">
-                            In the period from March 2023 to May 2023, I embarked on a virtual internship, focusing on app development. Following a comprehensive app flowchart, my team and I designed a work productivity app using Flutter. This hands-on experience not only enhanced my understanding of software development processes but also reinforced my commitment to continuous learning and practical application of skills gained in academic settings.
+                            fter completing this website, I've set my sights on two main goals. Firstly, I aim to gain industry experience—whether through a placement year,
+                            volunteer work, or an internship. My objective is to expand my skill set and truly understand what it's like to work as an engineer.
+
+                            Secondly, I'm working on enhancing my skills at home by pursuing online certificates such as Microsoft Azure Fundamentals,
+                            all while engaging in personal projects. Currently, I'm focused on honing my Vue.js skills to create a website that is deliberately perplexing.
+                            For instance, if you want to enter your phone number, get ready to roll a dice for each digit! The challenge is part of the fun.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="checkpoint">
+                    <div>
+                        <h3 class="cph3">
+                            Need to know stuff about me
+                        </h3>
+                        <p class="cpWords">
+                            Personally, I believe a person's favorite movie or song speaks volumes about them. So, to offer you a glimpse into my favorites, the current song on endless replay is:
+                             <a class='cpLink' href='https://open.spotify.com/track/3zdtYfRqOn1axEmHZTWivp?si=8d6bb69acb364a28'>Foreplay by Jalen Santoy</a>.
+                              If you have the time, I'd wholeheartedly recommend giving it a listen.
+
+                            Now, shifting gears to the film realm, fair warning - my favorite movie is the cliché but utterly captivating 'Dune 2.' Those three hours had me hooked,
+                            and as soon as the credits rolled, the only thought on my mind was getting another ticket to watch it again. I think that speaks for itself.
+
+
                         </p>
                     </div>
                 </div>
@@ -166,5 +182,14 @@
 
     }
 }
+
+    .cpLink{
+        text-decoration: none;
+        color: #6d6262;
+    }
+
+    .cpLink:hover{
+        color: rgb(202, 202, 202);
+    }
 
 </style>
