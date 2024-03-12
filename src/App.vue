@@ -21,7 +21,7 @@ export default {
     const check = () => {
       const screenWidth = window.innerWidth;
 
-      if (screenWidth < 480) {
+      if (screenWidth < 1000) {
         intro.value = '🏠';
         project.value = '💻';
         about.value = '📖';
@@ -102,28 +102,40 @@ body {
 
 
 .navbar {
+  min-width: 200px;
+  width: 50%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1%;
   background-color: #333;
   overflow: hidden;
   position: sticky;
-  width: 100%;
   top: 0;
   z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .navbar a {
-  float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  cursor: pointer; /* Add cursor:pointer to indicate the link is clickable */
+  cursor: pointer;
 }
 
 .navbar a:hover {
   background-color: #ddd;
   color: black;
 }
+
+
 
 ::-webkit-scrollbar {
   width: 10px;
