@@ -25,7 +25,7 @@
                             What's next?
                         </h3>
                         <p class="cpWords">
-                            fter completing this website, I've set my sights on two main goals. Firstly, I aim to gain industry experience—whether through a placement year,
+                            After completing this website, I've set my sights on two main goals. Firstly, I aim to gain industry experience—whether through a placement year,
                             volunteer work, or an internship. My objective is to expand my skill set and truly understand what it's like to work as an engineer.
 
                             Secondly, I'm working on enhancing my skills at home by pursuing online certificates such as Microsoft Azure Fundamentals,
