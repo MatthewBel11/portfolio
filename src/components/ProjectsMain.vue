@@ -21,7 +21,7 @@
         <img src="@/assets/html-c.png" alt="html">
         <img src="@/assets/python-c.png" alt="python">
         <img src="@/assets/sql-server-c.png" alt="sql">
-        <img src="@/assets/git.png" alt="git">
+        <img src="@/assets/c-sharp.png" alt="git">
         <img src="@/assets/github-c.png" alt="github">
     </div>
 
