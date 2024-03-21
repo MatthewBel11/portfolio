@@ -5,12 +5,42 @@
       </div>
   
       <div class="image-container-main">
-        <img src="@/assets/white-place-holder.jpg" alt="Image 1">
-        <img src="@/assets/white-place-holder.jpg" alt="Image 1">
-        <img src="@/assets/white-place-holder.jpg" alt="Image 1">
-        <img src="@/assets/white-place-holder.jpg" alt="Image 1">
-        <img src="@/assets/white-place-holder.jpg" alt="Image 1">
-        <img src="@/assets/white-place-holder.jpg" alt="Image 1">
+
+        <div class="item">
+          <a href="https://github.com/MatthewBel11/WineDataProject">
+            <img src="@/assets/white-place-holder.jpg" alt="Image 1">
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="https://github.com/MatthewBel11/WineDataProject">
+            <img src="@/assets/white-place-holder.jpg" alt="Image 1">
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="https://github.com/MatthewBel11/WineDataProject">
+            <img src="@/assets/white-place-holder.jpg" alt="Image 1">
+          </a>
+        </div>
+
+        <div v-show="screenWidth > 670" class="item">
+          <a href="https://github.com/MatthewBel11/WineDataProject">
+            <img src="@/assets/white-place-holder.jpg" alt="Image 1">
+          </a>
+        </div>
+
+        <div v-show="screenWidth > 670" class="item">
+          <a href="https://github.com/MatthewBel11/WineDataProject">
+            <img src="@/assets/white-place-holder.jpg" alt="Image 1">
+          </a>
+        </div>
+
+        <div v-show="screenWidth > 670" class="item">
+          <a href="https://github.com/MatthewBel11/WineDataProject">
+            <img src="@/assets/white-place-holder.jpg" alt="Image 1">
+          </a>
+        </div>
     </div>
 
     <h2 class="tech"> Tech Stack </h2>
@@ -27,6 +57,40 @@
 
     </div>
   </template>
+
+<script>
+import { ref, onMounted, onUnmounted } from 'vue';
+
+export default {
+  setup() {
+    const screenWidth = ref(window.innerWidth);
+
+    const check = () => {
+      screenWidth.value = window.innerWidth;
+      // Do something with screenWidth if needed
+    };
+
+    onMounted(() => {
+      check();
+      document.title = "Matthew's Portfolio";
+
+      // Add event listener on mount
+      window.addEventListener('resize', check);
+    });
+
+    onUnmounted(() => {
+      // Remove event listener on unmount
+      window.removeEventListener('resize', check);
+    });
+
+    return {
+      screenWidth
+    };
+  },
+};
+</script>
+
+
   
   <style scoped>
   .wrapper {
@@ -50,20 +114,24 @@
     padding: 0;
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 60%;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
   }
   
-  .image-container-main img {
-    max-width: 50%;
-    width: 25%;
-    margin: 2%;
+  .item{
+    width: 30%;
+    margin: 10px;
+    margin-bottom: 50px;
+  }
+
+  .item img {
+    max-width: 100%;
     border-radius: 10%;
   }
   
-  .image-container-main img:hover {
+  .item img:hover {
     transform: scale(1.05);
     cursor: pointer;
     filter: blur(1px);
@@ -71,19 +139,29 @@
   }
   
   @media (max-width: 1100px) {
-    .image-container-main img {
-      max-width: 42%;
+
+    .item{
+      width: 45%;
+      margin-bottom: 20px;
+    }
+
+    .item img {
       width: 100%;
     }
 
     }
   
-  @media (max-width: 600px) {
+  @media (max-width: 670px) {
 
-    .image-container-main img {
-      max-width: 70%;
+    .item{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .item img {
       width: 100%;
     }
+
     }
   
   .tech {
