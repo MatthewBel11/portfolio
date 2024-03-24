@@ -7,9 +7,9 @@
       <div class="image-container-main">
 
         <div class="item">
-          <a href="https://github.com/MatthewBel11/WineDataProject">
-            <img src="@/assets/white-place-holder.jpg" alt="Image 1">
-          </a>
+          <img src="@/assets/Capture.png">
+          <img class="hover-image" src="@/assets/white-place-holder.jpg">
+          <p class="paragraph-1">The WineDataProject analyzes wine quality and characteristics using Python, uncovering insights through visualization and machine learning techniques.</p>
         </div>
 
         <div class="item">
@@ -93,6 +93,7 @@ export default {
 
   
   <style scoped>
+
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -120,22 +121,58 @@ export default {
     flex-wrap: wrap;
   }
   
-  .item{
+  .item {
+    position: relative;
     width: 30%;
     margin: 10px;
     margin-bottom: 50px;
+    overflow: hidden;
   }
 
   .item img {
     max-width: 100%;
     border-radius: 10%;
+    transition: opacity 0.3s ease; /* Add transition effect for smooth hover */
   }
-  
-  .item img:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
+
+  .item .hover-image {
+    display: none; /* Initially hide the hover image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .item:hover .hover-image {
+    display: block; /* Show the hover image on hover */
+  }
+
+  .item:hover img {
+    opacity: 0; /* Hide the original image on hover */
+  }
+
+  .paragraph-1{
+    font-size: 0.8vw;
+    width: 80%;
+  }
+
+  .item .paragraph-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    display: none;
+    z-index: 2; /* Ensure the paragraph appears above the hover image */
+    transition: opacity 0.3s ease; /* Add transition effect for smooth hover */
+  }
+
+  .item:hover .paragraph-1 {
+    display: block; /* Show the paragraph on hover */
+    opacity: 1; /* Make the paragraph fully visible */
   }
   
   @media (max-width: 1100px) {
@@ -143,6 +180,10 @@ export default {
     .item{
       width: 45%;
       margin-bottom: 20px;
+    }
+
+    .paragraph-1{
+      font-size: 1.5vw;
     }
 
     .item img {
@@ -160,6 +201,10 @@ export default {
 
     .item img {
       width: 100%;
+    }
+
+    .paragraph-1{
+      font-size: 3vw;
     }
 
     }
